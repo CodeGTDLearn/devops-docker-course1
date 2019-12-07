@@ -16,7 +16,7 @@ EXPOSE 8009
 VOLUME "/opt/tomcat/webapps"
 VOLUME "/opt/tomcat/logs"
 
-#The WORKDIR instruction sets the working directory for any RUN, CMD, ENTRYPOINT, COPY and ADD instructions that follow it in the Dockerfile-v1-GAB.
+#The WORKDIR instruction sets the working directory for any RUN, CMD, ENTRYPOINT, COPY and ADD instructions that follow it in the Dockerfile-GAB-v1-GAB.
 WORKDIR /opt/tomcat
 
 # Launch Tomcat
