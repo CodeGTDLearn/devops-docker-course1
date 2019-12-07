@@ -1,5 +1,4 @@
-
-#Step 1: Building an image
+8#Step 1: Building an image
 #Syntax: docker build -t <image-name> <location of dockerfile>
 -------------------------------------------------------------------
 docker build -t my-nginx .
