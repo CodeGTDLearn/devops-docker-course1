@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8250e9f2-95f7-474b-9dd7-938f8d15d77c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Usecase-3/docker-git-hello-world/.project" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Usecase-3/docker-git-hello-world/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Usecase-3/docker-git-hello-world/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Usecase-4/docker-spring-mvc/.project" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Usecase-5/tomcat7-jdk7/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Usecase-5/tomcat7-jdk7/Dockerfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Usecase-5/tomcat8-jdk8/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Usecase-5/tomcat8-jdk8/Dockerfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Usecase-6/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Usecase-6/Dockerfile" afterDir="false" />
@@ -125,7 +124,7 @@
       <workItem from="1576700642555" duration="50000" />
       <workItem from="1576700872804" duration="3821000" />
       <workItem from="1576783013888" duration="683000" />
-      <workItem from="1576871842462" duration="5015000" />
+      <workItem from="1576871842462" duration="5331000" />
     </task>
     <servers />
   </component>
@@ -164,6 +163,10 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="161" y="25" key="Vcs.Push.Dialog.v2/0.0.1536.864/-1600.0.1600.900@0.0.1536.864" timestamp="1575733772020" />
+    <state x="100" y="100" width="1336" height="664" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1576877673027">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="100" y="100" width="1336" height="664" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.0.1536.864/-1600.0.1600.900@0.0.1536.864" timestamp="1576877673027" />
     <state x="452" y="123" key="git4idea.merge.GitMergeDialog" timestamp="1575733662806">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
@@ -176,9 +179,9 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="0" y="0" key="new project wizard/0.0.1536.864/-1600.0.1600.900@0.0.1536.864" timestamp="1576004465443" />
-    <state x="261" y="0" width="1009" height="860" key="search.everywhere.popup" timestamp="1575755500163">
+    <state x="261" y="0" width="1009" height="860" key="search.everywhere.popup" timestamp="1576877672610">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="261" y="0" width="1009" height="860" key="search.everywhere.popup/0.0.1536.864/-1600.0.1600.900@0.0.1536.864" timestamp="1575755500163" />
+    <state x="261" y="0" width="1009" height="860" key="search.everywhere.popup/0.0.1536.864/-1600.0.1600.900@0.0.1536.864" timestamp="1576877672610" />
   </component>
 </project>
