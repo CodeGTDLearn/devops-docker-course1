@@ -6,6 +6,7 @@
       <change beforePath="$PROJECT_DIR$/Usecase-4/docker-spring-mvc/src/main/java/org/pictolearn/springmvc/DockerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Usecase-4/docker-spring-mvc/src/main/java/org/pictolearn/springmvc/DockerController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Usecase-5/tomcat7-jdk7/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Usecase-5/tomcat7-jdk7/Dockerfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Usecase-5/tomcat8-jdk8/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Usecase-5/tomcat8-jdk8/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Usecase-6/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Usecase-6/Dockerfile" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -119,7 +120,7 @@
       <workItem from="1576700872804" duration="3821000" />
       <workItem from="1576783013888" duration="683000" />
       <workItem from="1576871842462" duration="5917000" />
-      <workItem from="1576945511696" duration="8803000" />
+      <workItem from="1576945511696" duration="10319000" />
     </task>
     <servers />
   </component>
