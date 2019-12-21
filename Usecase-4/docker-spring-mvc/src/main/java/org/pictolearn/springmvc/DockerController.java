@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 @Controller
-@RequestMapping("/docker")
+@RequestMapping("/docker222")
 public class DockerController {
 
 	@RequestMapping(method=RequestMethod.GET)

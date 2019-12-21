@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8250e9f2-95f7-474b-9dd7-938f8d15d77c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Usecase-3/docker-git-hello-world/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Usecase-3/docker-git-hello-world/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Usecase-4/docker-spring-mvc/src/main/java/org/pictolearn/springmvc/DockerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Usecase-4/docker-spring-mvc/src/main/java/org/pictolearn/springmvc/DockerController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Usecase-5/tomcat7-jdk7/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Usecase-5/tomcat7-jdk7/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Usecase-5/tomcat8-jdk8/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Usecase-5/tomcat8-jdk8/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Usecase-6/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Usecase-6/Dockerfile" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,12 +89,7 @@
       <list>
         <serviceView>
           <treeState>
-            <expand>
-              <path>
-                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="Docker" type="9fbbdea:ServiceModel$ServiceNode" />
-              </path>
-            </expand>
+            <expand />
             <select />
           </treeState>
         </serviceView>
@@ -124,7 +117,8 @@
       <workItem from="1576700642555" duration="50000" />
       <workItem from="1576700872804" duration="3821000" />
       <workItem from="1576783013888" duration="683000" />
-      <workItem from="1576871842462" duration="5331000" />
+      <workItem from="1576871842462" duration="5917000" />
+      <workItem from="1576945511696" duration="2058000" />
     </task>
     <servers />
   </component>
@@ -151,6 +145,10 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="387" y="0" key="#Usecase-4/Dockerfile/0.0.1536.864/-1600.0.1600.900@0.0.1536.864" timestamp="1576872550857" />
+    <state x="100" y="100" width="1336" height="664" key="DiffContextDialog" timestamp="1576877779808">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="100" y="100" width="1336" height="664" key="DiffContextDialog/0.0.1536.864/-1600.0.1600.900@0.0.1536.864" timestamp="1576877779808" />
     <state x="449" y="62" key="FileChooserDialogImpl" timestamp="1575754929186">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
@@ -163,10 +161,10 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="161" y="25" key="Vcs.Push.Dialog.v2/0.0.1536.864/-1600.0.1600.900@0.0.1536.864" timestamp="1575733772020" />
-    <state x="100" y="100" width="1336" height="664" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1576877673027">
+    <state x="100" y="100" width="1336" height="664" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1576877779808">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="100" y="100" width="1336" height="664" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.0.1536.864/-1600.0.1600.900@0.0.1536.864" timestamp="1576877673027" />
+    <state x="100" y="100" width="1336" height="664" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.0.1536.864/-1600.0.1600.900@0.0.1536.864" timestamp="1576877779808" />
     <state x="452" y="123" key="git4idea.merge.GitMergeDialog" timestamp="1575733662806">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
