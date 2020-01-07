@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8250e9f2-95f7-474b-9dd7-938f8d15d77c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Usecase-7/webapps/docker-spring-mvc.war" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Usecase-4/docker-spring-mvc/src/main/java/org/pictolearn/springmvc/DockerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Usecase-4/docker-spring-mvc/src/main/java/org/pictolearn/springmvc/DockerController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Usecase-5/tomcat7-jdk7/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Usecase-5/tomcat7-jdk7/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Usecase-5/tomcat8-jdk8/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Usecase-5/tomcat8-jdk8/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Usecase-6/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Usecase-6/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Usecase-7/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Usecase-7/Dockerfile" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +47,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Usecase-7/webapp" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -61,6 +59,11 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.settingsDialog.application.dockerMachine" />
     <property name="show.migrate.to.gradle.popup" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\SERVIDOR\Projects\docker-tutorial\Usecase-7\webapp" />
+    </key>
   </component>
   <component name="RunManager" selected="Docker.Usecase-4/Dockerfile">
     <configuration name="Usecase-1/Dockerfile" type="docker-deploy" factoryName="dockerfile" temporary="true">
@@ -120,7 +123,10 @@
       <workItem from="1576700872804" duration="3821000" />
       <workItem from="1576783013888" duration="683000" />
       <workItem from="1576871842462" duration="5917000" />
-      <workItem from="1576945511696" duration="10319000" />
+      <workItem from="1576945511696" duration="15757000" />
+      <workItem from="1578408615194" duration="30000" />
+      <workItem from="1578419240766" duration="2315000" />
+      <workItem from="1578425191189" duration="1653000" />
     </task>
     <servers />
   </component>
