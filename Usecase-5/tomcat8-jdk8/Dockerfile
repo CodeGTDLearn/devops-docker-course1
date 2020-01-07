@@ -1,17 +1,18 @@
 FROM ubuntu:16.04
-
-#Author of the file
 MAINTAINER "paulo"="pauleta"
 
 #Download the latest version of 8.5.x
-# Verify the version exists here or else change it: http://apache.mirrors.tds.net/tomcat/tomcat-8/
-ENV TOMCAT_VER 8.5.50
+# Verify the version exists here or else change it:
+# http://apache.mirrors.tds.net/tomcat/tomcat-8/
+ENV TC_VER 8.5.50
 
 # Run an update to get all the security patches
-RUN apt-get update && apt-get -y upgrade && \
+RUN apt-get update && \
+    apt-get -y upgrade && \
     apt-get -y install software-properties-common && \
-    apt-get -y update && \
-    apt-get -y install curl vim wget && \
+    apt-get -y update
+
+RUN apt-get -y install curl vim wget && \
     apt-get -y update
 
 # Just in case:
@@ -28,9 +29,9 @@ ENV JAVA_HOME /usr/lib/jvm/java-1.8.0-openjdk-amd64
 
 # Get Tomcat
 # notice that i can add the same RUN command across multiple lines
-RUN wget --quiet --no-cookies http://apache.mirrors.tds.net/tomcat/tomcat-8/v${TOMCAT_VER}/bin/apache-tomcat-${TOMCAT_VER}.tar.gz -O /tmp/tomcat.tgz && \
+RUN wget --quiet --no-cookies http://apache.mirrors.tds.net/tomcat/tomcat-8/v${TC_VER}/bin/apache-tomcat-${TC_VER}.tar.gz -O /tmp/tomcat.tgz && \
     tar xzvf /tmp/tomcat.tgz -C /opt && \
-    mv /opt/apache-tomcat-${TOMCAT_VER} /opt/tomcat && \
+    mv /opt/apache-tomcat-${TC_VER} /opt/tomcat && \
     rm /tmp/tomcat.tgz  && \
     rm -rf /opt/tomcat/webapps/examples && \
     rm -rf /opt/tomcat/webapps/docs && \

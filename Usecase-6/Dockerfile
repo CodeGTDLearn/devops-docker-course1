@@ -1,5 +1,5 @@
 #Taking a personal imagem drom DockerHub
-FROM pauloportfolio/jdk8:latest
+FROM pauloportfolio/tc8:latest
 
 COPY docker-spring-mvc.war /opt/tomcat/webapps/ROOT.war
 

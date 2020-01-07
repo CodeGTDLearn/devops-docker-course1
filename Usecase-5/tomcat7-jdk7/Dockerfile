@@ -1,8 +1,9 @@
 FROM ubuntu:16.04
 LABEL "Maintainer"="Pictolearn"
 
-#Verify the version exists here or else change it: http://apache.rediris.es/tomcat/tomcat-7
-ENV TOMCAT_VER 7.0.99
+#Verify the version exists here or else change it:
+#http://apache.rediris.es/tomcat/tomcat-7
+ENV TOMCAT_VERSION 7.0.99
 
 # Run an update to get all the security patches
 RUN apt-get -y update && \
@@ -28,9 +29,9 @@ RUN add-apt-repository ppa:openjdk-r/ppa && \
 ENV JAVA_HOME /usr/lib/jvm/java-1.7.0-openjdk-amd64
 
 # Get Tomcat
-RUN wget --quiet --no-cookies http://apache.rediris.es/tomcat/tomcat-7/v${TOMCAT_VER}/bin/apache-tomcat-${TOMCAT_VER}.tar.gz -O /tmp/tomcat.tgz && \
+RUN wget --quiet --no-cookies http://apache.rediris.es/tomcat/tomcat-7/v${TOMCAT_VERSION}/bin/apache-tomcat-${TOMCAT_VERSION}.tar.gz -O /tmp/tomcat.tgz && \
     tar xzvf /tmp/tomcat.tgz -C /opt && \
-    mv /opt/apache-tomcat-${TOMCAT_VER} /opt/tomcat && \
+    mv /opt/apache-tomcat-${TOMCAT_VERSION} /opt/tomcat && \
     rm /tmp/tomcat.tgz && \
     rm -rf /opt/tomcat/webapps/examples && \
     rm -rf /opt/tomcat/webapps/docs && \
