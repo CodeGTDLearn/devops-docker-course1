@@ -2,10 +2,78 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8250e9f2-95f7-474b-9dd7-938f8d15d77c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Usecase-7/webapps/docker-spring-mvc/META-INF/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Usecase-7/webapps/docker-spring-mvc/META-INF/maven/docker-spring-mvc/docker-spring-mvc/pom.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Usecase-7/webapps/docker-spring-mvc/META-INF/maven/docker-spring-mvc/docker-spring-mvc/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Usecase-7/webapps/docker-spring-mvc/META-INF/war-tracker" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Usecase-7/webapps/docker-spring-mvc/WEB-INF/classes/org/pictolearn/springmvc/DockerController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Usecase-7/webapps/docker-spring-mvc/WEB-INF/lib/commons-logging-1.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Usecase-7/webapps/docker-spring-mvc/WEB-INF/lib/jstl-1.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Usecase-7/webapps/docker-spring-mvc/WEB-INF/lib/spring-aop-4.3.2.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Usecase-7/webapps/docker-spring-mvc/WEB-INF/lib/spring-beans-4.3.2.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Usecase-7/webapps/docker-spring-mvc/WEB-INF/lib/spring-context-4.3.2.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Usecase-7/webapps/docker-spring-mvc/WEB-INF/lib/spring-core-4.3.2.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Usecase-7/webapps/docker-spring-mvc/WEB-INF/lib/spring-expression-4.3.2.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Usecase-7/webapps/docker-spring-mvc/WEB-INF/lib/spring-web-4.3.2.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Usecase-7/webapps/docker-spring-mvc/WEB-INF/lib/spring-webmvc-4.3.2.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Usecase-7/webapps/docker-spring-mvc/WEB-INF/spring-servlet.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Usecase-7/webapps/docker-spring-mvc/WEB-INF/views/welcome.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Usecase-7/webapps/docker-spring-mvc/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Usecase-7/webapps/docker-spring-mvc/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Usecase-7/webapps/docker-spring-mvc/resources/apple-touch-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Usecase-7/webapps/docker-spring-mvc/resources/browserconfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Usecase-7/webapps/docker-spring-mvc/resources/css/bootstrap-theme.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Usecase-7/webapps/docker-spring-mvc/resources/css/bootstrap-theme.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Usecase-7/webapps/docker-spring-mvc/resources/css/bootstrap-theme.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Usecase-7/webapps/docker-spring-mvc/resources/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Usecase-7/webapps/docker-spring-mvc/resources/css/bootstrap.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Usecase-7/webapps/docker-spring-mvc/resources/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Usecase-7/webapps/docker-spring-mvc/resources/css/main.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Usecase-7/webapps/docker-spring-mvc/resources/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Usecase-7/webapps/docker-spring-mvc/resources/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Usecase-7/webapps/docker-spring-mvc/resources/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Usecase-7/webapps/docker-spring-mvc/resources/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Usecase-7/webapps/docker-spring-mvc/resources/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Usecase-7/webapps/docker-spring-mvc/resources/js/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Usecase-7/webapps/docker-spring-mvc/resources/js/vendor/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Usecase-7/webapps/docker-spring-mvc/resources/js/vendor/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Usecase-7/webapps/docker-spring-mvc/resources/js/vendor/jquery-1.11.2.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Usecase-7/webapps/docker-spring-mvc/resources/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Usecase-7/webapps/docker-spring-mvc/resources/js/vendor/npm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Usecase-7/webapps/docker-spring-mvc/resources/tile-wide.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Usecase-7/webapps/docker-spring-mvc/resources/tile.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Usecase-5/tomcat7-jdk7/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Usecase-5/tomcat7-jdk7/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Usecase-5/tomcat8-jdk8/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Usecase-5/tomcat8-jdk8/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Usecase-6/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Usecase-6/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Usecase-10/docker-compose-spring-boot/pictolearn-dispatcher/.classpath" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Usecase-10/docker-compose-spring-boot/pictolearn-dispatcher/.project" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Usecase-10/docker-compose-spring-boot/pictolearn-web/.classpath" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Usecase-10/docker-compose-spring-boot/pictolearn-web/.project" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Usecase-7/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Usecase-7/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Usecase-7/docker-spring-mvc.war" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Usecase-8/docker-compose-mysql/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Usecase-8/docker-compose-mysql/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Usecase-8/docker-compose-mysql/docker-mysql-connector/.classpath" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Usecase-8/docker-compose-mysql/docker-mysql-connector/.project" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Usecase-8/docker-compose-mysql/docker-mysql-connector/.settings/org.eclipse.core.resources.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Usecase-8/docker-compose-mysql/docker-mysql-connector/.settings/org.eclipse.jdt.apt.core.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Usecase-8/docker-compose-mysql/docker-mysql-connector/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Usecase-8/docker-compose-mysql/docker-mysql-connector/.settings/org.eclipse.m2e.core.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Usecase-8/docker-compose-mysql/docker-mysql-connector/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Usecase-8/docker-compose-mysql/docker-mysql-connector/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Usecase-8/docker-compose-mysql/docker-mysql-connector/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Usecase-8/docker-compose-mysql/docker-mysql-connector/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Usecase-8/docker-compose-mysql/docker-mysql-connector/src/main/java/org/pictolearn/docker/mysql/MySQLConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/Usecase-8/docker-compose-mysql/docker-mysql-connector/src/main/java/org/pictolearn/docker/mysql/MySQLConnection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Usecase-8/readme" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Usecase-9/docker-compose-spring-boot/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Usecase-9/docker-compose-spring-boot/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Usecase-9/docker-compose-spring-boot/pictolearn-docker/.classpath" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Usecase-9/docker-compose-spring-boot/pictolearn-docker/.project" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Usecase-9/docker-compose-spring-boot/pictolearn-docker/.settings/org.eclipse.core.resources.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Usecase-9/docker-compose-spring-boot/pictolearn-docker/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Usecase-9/docker-compose-spring-boot/pictolearn-docker/.settings/org.eclipse.m2e.core.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Usecase-9/docker-compose-spring-boot/pictolearn-docker/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Usecase-9/docker-compose-spring-boot/pictolearn-docker/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Usecase-9/docker-compose-spring-boot/pictolearn-docker/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Usecase-9/docker-compose-spring-boot/pictolearn-docker/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Usecase-9/docker-compose-spring-boot/pictolearn-docker/scripts/post.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Usecase-9/docker-compose-spring-boot/pictolearn-docker/scripts/test.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Usecase-9/docker-compose-spring-boot/pictolearn-docker/scripts/util.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Usecase-9/docker-compose-spring-boot/pictolearn-docker/src/main/java/org/pictolearn/docker/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/Usecase-9/docker-compose-spring-boot/pictolearn-docker/src/main/java/org/pictolearn/docker/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Usecase-9/docker-compose-spring-boot/pictolearn-docker/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Usecase-9/docker-compose-spring-boot/pictolearn-docker/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Usecase-9/readme" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,7 +91,12 @@
     <option name="HIDDEN_KINDS">
       <set />
     </option>
-    <expand />
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="Users@localhost" type="feb32156:DbDataSourceImpl" />
+      </path>
+    </expand>
     <select />
   </component>
   <component name="Git.Settings">
@@ -45,6 +118,7 @@
     <option name="showVisibilityIcons" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql.8&#10;mysql" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
@@ -58,21 +132,66 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsDialog.application.dockerMachine" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\SERVIDOR\Projects\docker-tutorial\Usecase-7\webapp" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\SERVIDOR\Projects\docker-tutorial\Usecase-7\webapps" />
+      <recent name="C:\Users\SERVIDOR\Projects\docker-tutorial\Usecase-7" />
+    </key>
   </component>
-  <component name="RunManager" selected="Docker.Usecase-4/Dockerfile">
-    <configuration name="Usecase-1/Dockerfile" type="docker-deploy" factoryName="dockerfile" temporary="true">
-      <deployment type="dockerfile">
-        <settings>
-          <option name="sourceFilePath" value="Usecase-1/Dockerfile" />
-        </settings>
-      </deployment>
+  <component name="RestClientSettings">
+    <option name="REQUEST_HISTORY">
+      <list>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:5555" />
+          <option name="urlPath" value="/list" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:5555" />
+          <option name="urlPath" value="list" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Docker.docker-compose-spring-boot: Compose Deployment">
+    <configuration name="rest-api#1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/rest-api.http" runType="Run single request">
       <method v="2" />
     </configuration>
     <configuration name="Usecase-4/Dockerfile" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="Docker">
@@ -83,10 +202,47 @@
       </deployment>
       <method v="2" />
     </configuration>
+    <configuration name="docker-compose-spring-boot: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="sourceFilePath" value="Usecase-9/docker-compose-spring-boot/docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="docker-compose-spring-boot.mysql: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="mysql" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="Usecase-9/docker-compose-spring-boot/docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="docker-compose-spring-boot.web: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="web" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="Usecase-9/docker-compose-spring-boot/docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Docker.docker-compose-spring-boot: Compose Deployment" />
+        <item itemvalue="Docker.docker-compose-spring-boot.web: Compose Deployment" />
+        <item itemvalue="Docker.docker-compose-spring-boot.mysql: Compose Deployment" />
+        <item itemvalue="HTTP Request.rest-api#1" />
         <item itemvalue="Docker.Usecase-4/Dockerfile" />
-        <item itemvalue="Docker.Usecase-1/Dockerfile" />
       </list>
     </recent_temporary>
   </component>
@@ -94,8 +250,14 @@
     <option name="viewStates">
       <list>
         <serviceView>
+          <option name="contentProportion" value="0.37412587" />
           <treeState>
-            <expand />
+            <expand>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="root:Users@localhost" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+            </expand>
             <select />
           </treeState>
         </serviceView>
@@ -128,6 +290,29 @@
       <workItem from="1578408615194" duration="30000" />
       <workItem from="1578419240766" duration="2315000" />
       <workItem from="1578425191189" duration="9676000" />
+      <workItem from="1578436203517" duration="36000" />
+      <workItem from="1578510629432" duration="10447000" />
+      <workItem from="1578521700400" duration="1846000" />
+      <workItem from="1578598095782" duration="979000" />
+      <workItem from="1578599114387" duration="6050000" />
+      <workItem from="1578605613327" duration="1239000" />
+      <workItem from="1578688108862" duration="21000" />
+      <workItem from="1578688169331" duration="30000" />
+      <workItem from="1578688214694" duration="1576000" />
+      <workItem from="1578690348100" duration="1446000" />
+      <workItem from="1578692355592" duration="1961000" />
+      <workItem from="1578927547374" duration="73000" />
+      <workItem from="1579549004559" duration="2971000" />
+      <workItem from="1579553904453" duration="2335000" />
+      <workItem from="1579673899017" duration="383000" />
+      <workItem from="1579674325864" duration="130000" />
+      <workItem from="1579761597984" duration="9733000" />
+      <workItem from="1579771362082" duration="2199000" />
+      <workItem from="1579848008166" duration="5481000" />
+      <workItem from="1579854279546" duration="629000" />
+      <workItem from="1579854924549" duration="5921000" />
+      <workItem from="1579929344996" duration="660000" />
+      <workItem from="1579930465964" duration="13299000" />
     </task>
     <servers />
   </component>
@@ -154,26 +339,69 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="387" y="0" key="#Usecase-4/Dockerfile/0.0.1536.864/-1600.0.1600.900@0.0.1536.864" timestamp="1576872550857" />
+    <state x="33" y="26" width="1488" height="786" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1579938087187">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="33" y="26" width="1488" height="786" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.864/-1600.166.1600.900/1920.181.900.1600@0.0.1536.864" timestamp="1579938087187" />
+    <state x="449" y="134" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1579674278034">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="449" y="134" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1536.864/-1600.0.1600.900@0.0.1536.864" timestamp="1578688120983" />
+    <state x="449" y="134" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1536.864/-1600.166.1600.900/1920.181.900.1600@0.0.1536.864" timestamp="1579674278034" />
     <state x="100" y="100" width="1336" height="664" key="DiffContextDialog" timestamp="1576877779808">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="100" y="100" width="1336" height="664" key="DiffContextDialog/0.0.1536.864/-1600.0.1600.900@0.0.1536.864" timestamp="1576877779808" />
-    <state x="449" y="62" key="FileChooserDialogImpl" timestamp="1575754929186">
+    <state x="449" y="62" key="FileChooserDialogImpl" timestamp="1579769225004">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="449" y="62" key="FileChooserDialogImpl/0.0.1536.864/-1600.0.1600.900@0.0.1536.864" timestamp="1575754929186" />
-    <state x="0" y="0" key="SettingsEditor" timestamp="1576872523839">
+    <state x="449" y="62" key="FileChooserDialogImpl/0.0.1536.864/-1600.0.1600.900@0.0.1536.864" timestamp="1578605549831" />
+    <state x="449" y="62" key="FileChooserDialogImpl/0.0.1536.864/-1600.166.1600.900/1920.181.900.1600@0.0.1536.864" timestamp="1579769225004" />
+    <state width="894" height="209" key="GridCell.Tab.0.bottom" timestamp="1579858475866">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="0" y="0" key="SettingsEditor/0.0.1536.864/-1600.0.1600.900@0.0.1536.864" timestamp="1576872523839" />
+    <state width="894" height="209" key="GridCell.Tab.0.bottom/0.0.1536.864/-1600.166.1600.900/1920.181.900.1600@0.0.1536.864" timestamp="1579858475866" />
+    <state width="894" height="209" key="GridCell.Tab.0.center" timestamp="1579858475866">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="894" height="209" key="GridCell.Tab.0.center/0.0.1536.864/-1600.166.1600.900/1920.181.900.1600@0.0.1536.864" timestamp="1579858475866" />
+    <state width="894" height="209" key="GridCell.Tab.0.left" timestamp="1579858475866">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="894" height="209" key="GridCell.Tab.0.left/0.0.1536.864/-1600.166.1600.900/1920.181.900.1600@0.0.1536.864" timestamp="1579858475866" />
+    <state width="894" height="209" key="GridCell.Tab.0.right" timestamp="1579858475866">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="894" height="209" key="GridCell.Tab.0.right/0.0.1536.864/-1600.166.1600.900/1920.181.900.1600@0.0.1536.864" timestamp="1579858475866" />
+    <state width="338" height="730" key="HiddenNamespacesPopup" timestamp="1579858232608">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="338" height="730" key="HiddenNamespacesPopup/0.0.1536.864/-1600.166.1600.900/1920.181.900.1600@0.0.1536.864" timestamp="1579858232608" />
+    <state x="0" y="0" key="SettingsEditor" timestamp="1579932886400">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="0" y="0" key="SettingsEditor/0.0.1536.864/-1600.0.1600.900@0.0.1536.864" timestamp="1578689102375" />
+    <state x="0" y="0" key="SettingsEditor/0.0.1536.864/-1600.166.1600.900/1920.181.900.1600@0.0.1536.864" timestamp="1579932886400" />
     <state x="161" y="25" key="Vcs.Push.Dialog.v2" timestamp="1575733772020">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="161" y="25" key="Vcs.Push.Dialog.v2/0.0.1536.864/-1600.0.1600.900@0.0.1536.864" timestamp="1575733772020" />
+    <state x="541" y="59" key="com.intellij.database.view.ui.DbObjectDialog" timestamp="1579858242165">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="541" y="59" key="com.intellij.database.view.ui.DbObjectDialog/0.0.1536.864/-1600.166.1600.900/1920.181.900.1600@0.0.1536.864" timestamp="1579858242165" />
     <state x="100" y="100" width="1336" height="664" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1576877779808">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="100" y="100" width="1336" height="664" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.0.1536.864/-1600.0.1600.900@0.0.1536.864" timestamp="1576877779808" />
+    <state x="476" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1579764503537">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="476" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1536.864/-1600.166.1600.900/1920.181.900.1600@0.0.1536.864" timestamp="1579764503537" />
+    <state x="0" y="0" width="960" height="864" key="find.popup" timestamp="1579771547386">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="0" y="0" width="960" height="864" key="find.popup/0.0.1536.864/-1600.166.1600.900/1920.181.900.1600@0.0.1536.864" timestamp="1579771547386" />
     <state x="452" y="123" key="git4idea.merge.GitMergeDialog" timestamp="1575733662806">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
@@ -186,9 +414,14 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="0" y="0" key="new project wizard/0.0.1536.864/-1600.0.1600.900@0.0.1536.864" timestamp="1576004465443" />
-    <state x="261" y="0" width="1009" height="860" key="search.everywhere.popup" timestamp="1578429058054">
+    <state x="268" y="217" width="1040" height="430" key="org.intellij.images.editor.actions.BackgroundImageDialog" timestamp="1578605551348">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="268" y="217" width="1040" height="430" key="org.intellij.images.editor.actions.BackgroundImageDialog/0.0.1536.864/-1600.0.1600.900@0.0.1536.864" timestamp="1578605551348" />
+    <state x="261" y="0" width="1009" height="860" key="search.everywhere.popup" timestamp="1579857736259">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="261" y="0" width="1009" height="860" key="search.everywhere.popup/0.0.1536.864/-1600.0.1600.900@0.0.1536.864" timestamp="1578429058054" />
+    <state x="261" y="0" width="1009" height="860" key="search.everywhere.popup/0.0.1536.864/-1600.166.1600.900/1920.181.900.1600@0.0.1536.864" timestamp="1579857736259" />
   </component>
 </project>

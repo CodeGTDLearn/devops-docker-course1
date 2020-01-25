@@ -1,24 +1,34 @@
 version: '3.1' #version of Docker-compose
+
+networks:
+  rede:
+  
 services: #specifies 2 microservices "web" and "mysql"
-  mysql:
-    # NOTE: As of June, 2018 this has been updated to use the version of mysql 5.7.22  
+  bancodb:
     image: mysql:5.7.22 # Expose a mysql image
-    ports: ["8888:3306"] # Expose port 8888
-    hostname: mysql # mysql hostname
+    restart: always
+    ports:
+      - "8888:3306" # Expose port 8888
+    hostname: mysqlw # mysql hostname
     environment: # root username and password
-        - MYSQL_ROOT_PASSWORD=root
-        - MYSQL_DATABASE=Users
+      - MYSQL_ROOT_PASSWORD=root
+      - MYSQL_USER=root
+      - MYSQL_DATABASE=Users
+    networks:
+      - rede
+    
   web: # Web microservice
     build: pictolearn-docker
     image: pictolearn-docker
-    ports: ["5555:8080"] # expose port 5555 for the rest client to connect to
+    ports:
+      - "5555:8080" # expose port 5555 for the rest client to connect to
     hostname: web
     tty: true
-#    volumes: # you can include volumes, will be a TODO exercise
-#      - /Users/AGanesan/docker/docker-tutorial/resources/docker-compose-spring-boot/logs:/usr/local/pictolearn/logs
+    volumes:
+      - C:\users\servidor\desktop\logs:/usr/local/pictolearn/logs
     depends_on:
-      - mysql
-    links:
-      - mysql
+      - bancodb
+    networks:
+      - rede
     environment:
-      - DB_PORT=tcp://mysql:3306  
+      - DB_PORT=tcp://mysql:3306

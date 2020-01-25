@@ -22,7 +22,7 @@ public class MySQLConnection {
 		boolean connected = false;
 		while (!connected) {
 			try {
-				
+
 				// Note the way the mysql container is used here.
 				String url = "jdbc:mysql://db:3306/Users?autoReconnect=false&useSSL=false";
 				String user = "root";
