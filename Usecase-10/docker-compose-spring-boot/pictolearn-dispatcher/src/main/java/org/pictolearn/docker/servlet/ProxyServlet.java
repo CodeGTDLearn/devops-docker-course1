@@ -30,222 +30,237 @@ import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-@WebServlet(urlPatterns = "/proxyServlet/*", loadOnStartup = 1)
 /**
  * Servlet which queries the list of hostnames
  * and reverse proxies the request to web layer
- * 
- * @author pictolearn
  *
+ * @author pictolearn
  */
+@WebServlet(urlPatterns = "/proxyServlet/*", loadOnStartup = 1)
 public class ProxyServlet extends HttpServlet {
 
-	private static final long serialVersionUID = 2787920473586060865L;
+    private static final long serialVersionUID = 2787920473586060865L;
 
-	private static final Logger logger = LoggerFactory.getLogger(ProxyServlet.class);
+    private static final Logger logger = LoggerFactory.getLogger(ProxyServlet.class);
 
-	/**
-	 * Applies only to GET REQUESTS. The following method picks up a random host with name as "web" as specified
-	 * in the docker-compose file with the service name as "web" when the web container scales up
-	 */
-	@Override
-	protected void doGet(HttpServletRequest request, HttpServletResponse response)
-			throws ServletException, IOException {
+    /**
+     * Applies only to GET REQUESTS.
+     * The following method picks up a random host with name as "web" as specified
+     * in the docker-compose file with the service name as "web"
+     * when the web container scales up
+     */
+    @Override
+    protected void doGet(
+            HttpServletRequest request,
+            HttpServletResponse response) throws ServletException, IOException {
 
-		String path = request.getRequestURI().substring(request.getContextPath().length());
-		path = path.substring(path.indexOf("/proxyServlet/") + "/proxyServlet/".length(), path.length());
-		logger.debug("Path to query for GET Request: {}  ", path);
-		if (StringUtils.isEmpty(path)) {
-			response.setContentType("text/html");
-			PrintWriter out = response.getWriter();
-			out.println("Invalid GET CALL");
-			out.close();
-			return;
-		}
-		String ipAddress = getRandomIpAddress(response);
+        String path = request
+                .getRequestURI()
+                .substring(request.getContextPath().length());
 
-		if(ipAddress == null) {
-			response.setStatus(HttpServletResponse.SC_INTERNAL_SERVER_ERROR);
-			response.getWriter().println("No Hosts Found");
-			return;
-		}
-		
-		String url = "http://" + ipAddress + ":8080/" + path;
-		logger.debug("GET url :{} ", url);
+        path = path
+                .substring(path.indexOf("/proxyServlet/") +
+                        "/proxyServlet/".length(), path.length());
 
-		URL obj = new URL(url);
-		HttpURLConnection con = (HttpURLConnection) obj.openConnection();
-		con.setRequestMethod("GET");
-		response.addHeader("WEB-HOST", ipAddress);
-		sendResponse(response, con);
-	}
+        logger.debug("Path to query for GET Request: {}  ", path);
 
-	/**
-	 * Applies only to POST REQUEST
-	 */
-	@Override
-	protected void doPost(HttpServletRequest request, HttpServletResponse response)
-			throws ServletException, IOException {
+        if (StringUtils.isEmpty(path)) {
+            response.setContentType("text/html");
+            PrintWriter out = response.getWriter();
+            out.println("Invalid GET CALL");
+            out.close();
+            return;
+        }
 
-		String path = request.getRequestURI().substring(request.getContextPath().length());
-		path = path.substring(path.indexOf("/proxyServlet/") + "/proxyServlet/".length(), path.length());
-		logger.debug("Path to query for POST Request: {}  ", path);
-		if (StringUtils.isEmpty(path)) {
-			response.setContentType("text/html");
-			PrintWriter out = response.getWriter();
-			out.println("Invalid POST CALL empty URI");
-			out.close();
-			return;
-		}
-		String ipAddress = getRandomIpAddress(response);
+        String ipAddress = getRandomIpAddress(response);
 
-		if(ipAddress == null) {
-			response.setStatus(HttpServletResponse.SC_INTERNAL_SERVER_ERROR);
-			response.getWriter().println("No Hosts Found");
-			return;
-		}
-		
-		response.addHeader("WEB-HOST", ipAddress);
-		String url = "http://" + ipAddress + ":8080/" + path;
+        if (ipAddress == null) {
+            response.setStatus(HttpServletResponse.SC_INTERNAL_SERVER_ERROR);
+            response.getWriter().println("No Hosts Found");
+            return;
+        }
 
-		URL obj = new URL(url);
-		HttpURLConnection con = (HttpURLConnection) obj.openConnection();
-		con.setRequestMethod("POST");
-		logger.debug("POST url :{} ", url);
+        String url = "http://" + ipAddress + ":8080/" + path;
+        logger.debug("GET url :{} ", url);
 
-		Enumeration<String> headerNames = request.getHeaderNames();
-		Set<String> headers = new HashSet<>();
-		while (headerNames.hasMoreElements()) {
-			headers.add(headerNames.nextElement());
-		}
+        URL obj = new URL(url);
+        HttpURLConnection con = (HttpURLConnection) obj.openConnection();
+        con.setRequestMethod("GET");
+        response.addHeader("WEB-HOST", ipAddress);
+        sendResponse(response, con);
+    }
 
-		if (!CollectionUtils.isEmpty(headers)) {
-			for (String header : headers) {
-				String value = request.getHeader(header);
-				logger.debug("Adding header to the request  {} with value {} ", new Object[] { header, value });
-				con.setRequestProperty(header, value);
-			}
-		}
+    /**
+     * Applies only to POST REQUEST
+     */
+    @Override
+    protected void doPost(
+            HttpServletRequest request,
+            HttpServletResponse response) throws ServletException, IOException {
 
-		con.setDoOutput(true);
-		String body = getBody(request);
-		logger.debug("Body : {} ", body);
-		OutputStream wr = con.getOutputStream();
-		wr.write(body.getBytes("UTF-8"));
-		wr.flush();
-		wr.close();
-		sendResponse(response, con);
+        String path = request
+                .getRequestURI()
+                .substring(request.getContextPath().length());
 
-	}
+        path = path.substring(path.indexOf("/proxyServlet/") +
+                "/proxyServlet/".length(), path.length());
 
-	public String getBody(HttpServletRequest request) throws IOException {
+        logger.debug("Path to query for POST Request: {}  ", path);
+        if (StringUtils.isEmpty(path)) {
+            response.setContentType("text/html");
+            PrintWriter out = response.getWriter();
+            out.println("Invalid POST CALL empty URI");
+            out.close();
+            return;
+        }
+        String ipAddress = getRandomIpAddress(response);
 
-		String body = null;
-		StringBuilder stringBuilder = new StringBuilder();
-		BufferedReader bufferedReader = null;
+        if (ipAddress == null) {
+            response.setStatus(HttpServletResponse.SC_INTERNAL_SERVER_ERROR);
+            response.getWriter().println("No Hosts Found");
+            return;
+        }
 
-		try {
-			InputStream inputStream = request.getInputStream();
-			if (inputStream != null) {
-				bufferedReader = new BufferedReader(new InputStreamReader(inputStream));
-				char[] charBuffer = new char[128];
-				int bytesRead = -1;
-				while ((bytesRead = bufferedReader.read(charBuffer)) > 0) {
-					stringBuilder.append(charBuffer, 0, bytesRead);
-				}
-			} else {
-				stringBuilder.append("");
-			}
-		} catch (IOException ex) {
-			throw ex;
-		} finally {
-			if (bufferedReader != null) {
-				try {
-					bufferedReader.close();
-				} catch (IOException ex) {
-					throw ex;
-				}
-			}
-		}
+        response.addHeader("WEB-HOST", ipAddress);
+        String url = "http://" + ipAddress + ":8080/" + path;
 
-		body = stringBuilder.toString();
-		return body;
-	}
+        URL obj = new URL(url);
+        HttpURLConnection con = (HttpURLConnection) obj.openConnection();
+        con.setRequestMethod("POST");
+        logger.debug("POST url :{} ", url);
 
-	/**
-	 * return random IP Address. Note the host nane "web" which queries
-	 * all the hosts in the given docker-machine with the name web
-	 * 
-	 * @param response
-	 * @return
-	 * @throws UnknownHostException
-	 * @throws IOException
-	 */
-	private String getRandomIpAddress(HttpServletResponse response) throws UnknownHostException, IOException {
-		List<String> ipAddr = new ArrayList<>();
-		for (InetAddress addr : InetAddress.getAllByName("web")) {
-			logger.debug("Hostnames {}", addr.getHostAddress());
-			ipAddr.add(addr.getHostAddress());
-		}
-		int size = ipAddr.size();
-		if (size == 0) {
-			logger.error("Size less than 1");
-			return null;
-		}
+        Enumeration<String> headerNames = request.getHeaderNames();
+        Set<String> headers = new HashSet<>();
+        while (headerNames.hasMoreElements()) {
+            headers.add(headerNames.nextElement());
+        }
 
-		logger.debug("Total hosts : {} ", size);
+        if (!CollectionUtils.isEmpty(headers)) {
+            for (String header : headers) {
+                String value = request.getHeader(header);
+                logger.debug("Adding header to the request  {} with value {} ", new Object[]{header, value});
+                con.setRequestProperty(header, value);
+            }
+        }
 
-		int random = 0;
-		if (size == 1) {
-			random = 0;
-		}else if (size > 1){
-			random = ThreadLocalRandom.current().nextInt(0, ipAddr.size() - 1);
-		}
+        con.setDoOutput(true);
+        String body = getBody(request);
+        logger.debug("Body : {} ", body);
+        OutputStream wr = con.getOutputStream();
+        wr.write(body.getBytes("UTF-8"));
+        wr.flush();
+        wr.close();
+        sendResponse(response, con);
+    }
 
-		logger.debug("Random : {} " , random );
-		String ipAddrStr = ipAddr.get(random);
-		logger.debug("Returned IP addr : {} ", ipAddrStr);
-		return ipAddrStr;
-	}
+    public String getBody(HttpServletRequest request) throws IOException {
 
-	/**
-	 * send response to client include all the headers and the response body
-	 * 
-	 * @param response
-	 * @param con
-	 * @throws ProtocolException
-	 * @throws IOException
-	 */
-	private void sendResponse(HttpServletResponse response, HttpURLConnection con)
-			throws ProtocolException, IOException {
+        String body = null;
+        StringBuilder stringBuilder = new StringBuilder();
+        BufferedReader bufferedReader = null;
 
-		int responseCode = con.getResponseCode();
+        try {
+            InputStream inputStream = request.getInputStream();
+            if (inputStream != null) {
+                bufferedReader = new BufferedReader(new InputStreamReader(inputStream));
+                char[] charBuffer = new char[128];
+                int bytesRead = -1;
+                while ((bytesRead = bufferedReader.read(charBuffer)) > 0) {
+                    stringBuilder.append(charBuffer, 0, bytesRead);
+                }
+            } else {
+                stringBuilder.append("");
+            }
+        } catch (IOException ex) {
+            throw ex;
+        } finally {
+            if (bufferedReader != null) {
+                try {
+                    bufferedReader.close();
+                } catch (IOException ex) {
+                    throw ex;
+                }
+            }
+        }
 
-		if (responseCode == 200) {
-			BufferedReader in = new BufferedReader(new InputStreamReader(con.getInputStream()));
+        body = stringBuilder.toString();
+        return body;
+    }
 
-			Map<String, List<String>> headerFields = con.getHeaderFields();
-			if (!headerFields.isEmpty()) {
-				for (String headerField : headerFields.keySet()) {
-					Object value = headerFields.get(headerField);
-					logger.debug("Adding header field : {} , header value : {} ", new Object[] { headerField, value });
-					response.addHeader(headerField, value.toString());
-				}
-			}
+    /**
+     * return random IP Address. Note the host nane "web" which queries
+     * all the hosts in the given docker-machine with the name web
+     *
+     * @param response
+     * @return
+     * @throws UnknownHostException
+     * @throws IOException
+     */
+    private String getRandomIpAddress(HttpServletResponse response) throws UnknownHostException, IOException {
+        List<String> ipAddr = new ArrayList<>();
+        for (InetAddress addr : InetAddress.getAllByName("web")) {
+            logger.debug("Hostnames {}", addr.getHostAddress());
+            ipAddr.add(addr.getHostAddress());
+        }
+        int size = ipAddr.size();
+        if (size == 0) {
+            logger.error("Size less than 1");
+            return null;
+        }
 
-			String inputLine;
-			StringBuffer stringOutput = new StringBuffer();
+        logger.debug("Total hosts : {} ", size);
 
-			while ((inputLine = in.readLine()) != null) {
-				stringOutput.append(inputLine);
-			}
-			logger.debug("Received response : {}  ", stringOutput);
-			PrintWriter out = response.getWriter();
-			out.println(stringOutput.toString());
-		} else {
-			response.setStatus(HttpServletResponse.SC_INTERNAL_SERVER_ERROR);
-			response.getWriter().println("Internal Server Error");
-		}
+        int random = 0;
+        if (size == 1) {
+            random = 0;
+        } else if (size > 1) {
+            random = ThreadLocalRandom.current().nextInt(0, ipAddr.size() - 1);
+        }
 
-	}
+        logger.debug("Random : {} ", random);
+        String ipAddrStr = ipAddr.get(random);
+        logger.debug("Returned IP addr : {} ", ipAddrStr);
+        return ipAddrStr;
+    }
+
+    /**
+     * send response to client include all the headers and the response body
+     *
+     * @param response
+     * @param con
+     * @throws ProtocolException
+     * @throws IOException
+     */
+    private void sendResponse(HttpServletResponse response, HttpURLConnection con)
+            throws ProtocolException, IOException {
+
+        int responseCode = con.getResponseCode();
+
+        if (responseCode == 200) {
+            BufferedReader in = new BufferedReader(new InputStreamReader(con.getInputStream()));
+
+            Map<String, List<String>> headerFields = con.getHeaderFields();
+            if (!headerFields.isEmpty()) {
+                for (String headerField : headerFields.keySet()) {
+                    Object value = headerFields.get(headerField);
+                    logger.debug("Adding header field : {} , header value : {} ", new Object[]{headerField, value});
+                    response.addHeader(headerField, value.toString());
+                }
+            }
+
+            String inputLine;
+            StringBuffer stringOutput = new StringBuffer();
+
+            while ((inputLine = in.readLine()) != null) {
+                stringOutput.append(inputLine);
+            }
+            logger.debug("Received response : {}  ", stringOutput);
+            PrintWriter out = response.getWriter();
+            out.println(stringOutput.toString());
+        } else {
+            response.setStatus(HttpServletResponse.SC_INTERNAL_SERVER_ERROR);
+            response.getWriter().println("Internal Server Error");
+        }
+
+    }
 }
