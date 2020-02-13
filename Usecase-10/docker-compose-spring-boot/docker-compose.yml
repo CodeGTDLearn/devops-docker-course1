@@ -13,7 +13,7 @@ services:
   
   web:
     build: pictolearn-web
-    image: pictolearn-web
+    image: web-img
     hostname: web
     tty: true
     depends_on:
@@ -23,12 +23,12 @@ services:
     environment:
       - DB_PORT=tcp://mysql:3306  
   
-  dispatcher:
+  router:
     build: pictolearn-dispatcher
-    image: pictolearn-dispatcher
+    image: disp-img
     ports:
       - "1111:8080"
-    hostname: dispatcher
+    hostname: router
     tty: true
     environment:
       - CATALINE_BASE=/opt/tomcat
