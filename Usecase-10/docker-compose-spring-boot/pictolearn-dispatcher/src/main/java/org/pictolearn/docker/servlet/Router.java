@@ -30,42 +30,46 @@ import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-/**
- * Servlet which queries the list of hostnames
- * and reverse proxies the request to web layer
- *
- * @author pictolearn
- */
-@WebServlet(urlPatterns = "/proxyServlet/*", loadOnStartup = 1)
-public class ProxyServlet extends HttpServlet {
+//URL PRECEDENTE AO ENDPOINT
+@WebServlet(urlPatterns = "/xxx/*", loadOnStartup = 1)
+public class Router extends HttpServlet {
 
     private static final long serialVersionUID = 2787920473586060865L;
 
-    private static final Logger logger = LoggerFactory.getLogger(ProxyServlet.class);
+    private static final Logger logger = LoggerFactory.getLogger(Router.class);
 
+    //PORTA DO SERVIDOR TARGET
+    private final String port = "8080";
 
-    /**
-     * Applies only to GET REQUESTS.
-     * The following method picks up a random host with name as "web" as specified
-     * in the docker-compose file with the service name as "web"
-     * when the web container scales up
-     */
+    //URL PRECEDENTE AO ENDPOINT
+    private final String preEndpoint = "/xxx/";
+
     @Override
     protected void doGet(
             HttpServletRequest request,
             HttpServletResponse response) throws ServletException, IOException {
 
-        String path = request
-                .getRequestURI()
-                .substring(request.getContextPath().length());
+        logger.debug("\n\n");
+        logger.debug("+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
+        logger.debug("+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
+        logger.debug("+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
+        logger.debug("\n");
 
-        path = path
-                .substring(path.indexOf("/proxyServlet/") +
-                        "/proxyServlet/".length(), path.length());
+        String uri = request.getRequestURI().toString();
 
-        logger.debug("Path to query for GET Request: {}  ", path);
+        String path = request.getRequestURI().substring(request.getContextPath().length());
 
-        if (StringUtils.isEmpty(path)) {
+        logger.debug("1.1) GET URI: {}", uri);
+        logger.debug("1.2) GET Request: {}", path);
+
+        String endpoint = path.substring(path.indexOf(preEndpoint) +
+                preEndpoint.length(), path.length());
+
+
+        logger.debug("2) GET endpoint: {}", endpoint);
+
+
+        if (StringUtils.isEmpty(endpoint)) {
             response.setContentType("text/html");
             PrintWriter out = response.getWriter();
             out.println("Invalid GET CALL");
@@ -73,7 +77,10 @@ public class ProxyServlet extends HttpServlet {
             return;
         }
 
-        String ipAddress = getRandomIpAddress(response);
+        String ipAddress = getIpAddress(response, "web");
+
+
+        logger.debug("3) GET IpAddress: {}", ipAddress);
 
         if (ipAddress == null) {
             response.setStatus(HttpServletResponse.SC_INTERNAL_SERVER_ERROR);
@@ -81,19 +88,25 @@ public class ProxyServlet extends HttpServlet {
             return;
         }
 
-        String url = "http://" + ipAddress + ":8080/" + path;
-        logger.debug("GET url :{} ", url);
+
+        String url = "http://" + ipAddress + ":" + port + "/" + endpoint;
+
 
         URL obj = new URL(url);
         HttpURLConnection con = (HttpURLConnection) obj.openConnection();
         con.setRequestMethod("GET");
-        response.addHeader("WEB-HOST", ipAddress);
+        response.addHeader("WEB-HOST-GET-SCALE", ipAddress);
         sendResponse(response, con);
+
+        logger.debug("4) GET url montada: {}", url);
+
+        logger.debug("\n");
+        logger.debug("+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
+        logger.debug("+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
+        logger.debug("+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
+        logger.debug("\n\n");
     }
 
-    /**
-     * Applies only to POST REQUEST
-     */
     @Override
     protected void doPost(
             HttpServletRequest request,
@@ -105,21 +118,19 @@ public class ProxyServlet extends HttpServlet {
         logger.debug("+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
         logger.debug("\n");
 
-        String uri = request
-                .getRequestURI().toString();
 
-        String path = request
-                .getRequestURI()
-                .substring(request.getContextPath().length());
+        String uri = request.getRequestURI().toString();
 
-        logger.debug("1.1) POST URI: {}  ", uri);
-        logger.debug("1.2) POST Request: {}  ", path);
+        String path = request.getRequestURI().substring(request.getContextPath().length());
 
-        String endpoint = path.substring(path.indexOf("/proxyServlet/") +
-                "/proxyServlet/".length(), path.length());
+        logger.debug("1.1) POST URI: {}", uri);
+        logger.debug("1.2) POST Request: {}", path);
+
+        String endpoint = path.substring(path.indexOf(preEndpoint) +
+                preEndpoint.length(), path.length());
 
 
-        logger.debug("2) POST endpoint: {}  ", endpoint);
+        logger.debug("2) POST endpoint: {}", endpoint);
 
 
         if (StringUtils.isEmpty(endpoint)) {
@@ -129,9 +140,9 @@ public class ProxyServlet extends HttpServlet {
             out.close();
             return;
         }
-        String ipAddress = getRandomIpAddress(response);
+        String ipAddress = getIpAddress(response, "web");
 
-        logger.debug("3) POST IpAddress: {}  ", ipAddress);
+        logger.debug("3) POST IpAddress: {}", ipAddress);
 
         if (ipAddress == null) {
             response.setStatus(HttpServletResponse.SC_INTERNAL_SERVER_ERROR);
@@ -139,14 +150,14 @@ public class ProxyServlet extends HttpServlet {
             return;
         }
 
-        response.addHeader("WEB-HOST-SCALE", ipAddress);
-        String url = "http://" + ipAddress + ":8080/" + endpoint;
+        response.addHeader("WEB-HOST-POST-SCALE", ipAddress);
+        String url = "http://" + ipAddress + ":" + port + "/" + endpoint;
 
         URL obj = new URL(url);
         HttpURLConnection con = (HttpURLConnection) obj.openConnection();
         con.setRequestMethod("POST");
 
-        logger.debug("4) POST url :{} ", url);
+        logger.debug("4) POST url montada: {}", url);
 
 
         Enumeration<String> headerNames = request.getHeaderNames();
@@ -161,7 +172,7 @@ public class ProxyServlet extends HttpServlet {
             for (String header : headers) {
                 String value = request.getHeader(header);
                 contador++;
-                logger.debug("5.{}) POST Add header in req: {} | value: {} ", new Object[]{contador, header, value});
+                logger.debug("5.{}) POST Add header: {} | value: {} ", new Object[]{contador, header, value});
                 con.setRequestProperty(header, value);
             }
         }
@@ -169,7 +180,7 @@ public class ProxyServlet extends HttpServlet {
         con.setDoOutput(true);
         String body = getBody(request);
 
-        logger.debug("6) POST Body: {} ", body);
+        logger.debug("6) POST Body: {}", body);
 
         logger.debug("\n");
         logger.debug("+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
@@ -218,28 +229,24 @@ public class ProxyServlet extends HttpServlet {
         return body;
     }
 
-    /**
-     * return random IP Address. Note the host nane "web" which queries
-     * all the hosts in the given docker-machine with the name web
-     *
-     * @param response
-     * @return
-     * @throws UnknownHostException
-     * @throws IOException
-     */
-    private String getRandomIpAddress(HttpServletResponse response) throws UnknownHostException, IOException {
+
+    private String getIpAddress(HttpServletResponse response, String webServer) throws UnknownHostException, IOException {
+
         List<String> ipAddr = new ArrayList<>();
-        for (InetAddress addr : InetAddress.getAllByName("web")) {
-            logger.debug("Hostnames {}", addr.getHostAddress());
+
+        for (InetAddress addr : InetAddress.getAllByName(webServer)) {
+            logger.debug("Hostnames: {}", addr.getHostAddress());
             ipAddr.add(addr.getHostAddress());
         }
+
         int size = ipAddr.size();
+
         if (size == 0) {
             logger.error("Size less than 1");
             return null;
         }
 
-        logger.debug("Total hosts : {} ", size);
+        logger.debug("Total hosts: {} ", size);
 
         int random = 0;
         if (size == 1) {
@@ -248,20 +255,12 @@ public class ProxyServlet extends HttpServlet {
             random = ThreadLocalRandom.current().nextInt(0, ipAddr.size() - 1);
         }
 
-        logger.debug("Random : {} ", random);
+        logger.debug("Random: {} ", random);
         String ipAddrStr = ipAddr.get(random);
-        logger.debug("Returned IP addr : {} ", ipAddrStr);
+        logger.debug("Returned IP addr: {} ", ipAddrStr);
         return ipAddrStr;
     }
 
-    /**
-     * send response to client include all the headers and the response body
-     *
-     * @param response
-     * @param con
-     * @throws ProtocolException
-     * @throws IOException
-     */
     private void sendResponse(HttpServletResponse response, HttpURLConnection con)
             throws ProtocolException, IOException {
 
@@ -272,9 +271,12 @@ public class ProxyServlet extends HttpServlet {
 
             Map<String, List<String>> headerFields = con.getHeaderFields();
             if (!headerFields.isEmpty()) {
+                int contador = 0;
                 for (String headerField : headerFields.keySet()) {
+                    contador++;
                     Object value = headerFields.get(headerField);
-                    logger.debug("Adding header field : {} , header value : {} ", new Object[]{headerField, value});
+                    //logger.debug("Add header RESP: {}, header value : {} ", new Object[]{headerField, value});
+                    logger.debug("3.{}) Add header RESP: {} | header value: {}", new Object[]{contador, headerField, value});
                     response.addHeader(headerField, value.toString());
                 }
             }

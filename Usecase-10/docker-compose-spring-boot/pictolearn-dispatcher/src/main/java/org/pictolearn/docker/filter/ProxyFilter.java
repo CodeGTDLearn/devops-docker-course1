@@ -14,43 +14,25 @@ import javax.servlet.http.HttpServletRequest;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-/**
- * This proxy filter forwards the request to a Proxy Servlet
- * with the URI
- *
- * @author agane
- */
-@WebFilter(filterName = "proxyFilter")
+//ANOTA ESTA CLASSE COM SENDO O FILTRO (filterProxy)
+@WebFilter(filterName = "filterProxy")
 public class ProxyFilter implements Filter {
-
     private static final Logger logger = LoggerFactory.getLogger(ProxyFilter.class);
 
+    private String routerClass = "/Router";
 
-    public void init(FilterConfig arg0) throws ServletException {
-    }
+    public void init(FilterConfig arg0) throws ServletException {}
 
-    // funciona a cada request/response
-    public void doFilter(
-            ServletRequest request,
-            ServletResponse response,
-            FilterChain chain)
+    public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain)
             throws IOException, ServletException {
 
         HttpServletRequest req = (HttpServletRequest) request;
 
-        String log1 = req.getRequestURI().substring(req.getContextPath().length());
+        request.setAttribute("uri", req.getRequestURI().substring(req.getContextPath().length()));
 
-        logger.debug("1) ProxyFilter: {}",log1);
-
-        request.setAttribute(
-                "uri",
-                req.getRequestURI().substring(req.getContextPath().length()));
-
-        request.getRequestDispatcher("/ProxyServlet").forward(request, response);
-
+        //encaminha o request p/ o classe Router
+        request.getRequestDispatcher(routerClass).forward(request, response);
     }
 
-    public void destroy() {
-    }
-
+    public void destroy() {}
 }

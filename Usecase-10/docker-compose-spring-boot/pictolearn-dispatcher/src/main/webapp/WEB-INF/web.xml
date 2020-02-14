@@ -3,14 +3,21 @@
          xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
           http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
          version="3.0">
-    <display-name>Dispatcher Application</display-name>
+
+    <display-name>Router Application</display-name>
+
+    <!--    FILTRO (filterproxy)-->
     <filter>
-        <display-name>ProxyFilter</display-name>
-        <filter-name>proxyFilter</filter-name>
+        <filter-name>filterProxy</filter-name>
+
+        <!--    FILTRO ENCAMINHA A URL P/ CLASSE PROXYFILTER.JAVA-->
         <filter-class>org.pictolearn.docker.filter.ProxyFilter</filter-class>
     </filter>
+
+    <!--    INTERCEPTA TODAS URLS(*.*) E ENVIA P/ O FILTRO (filterProxy)-->
     <filter-mapping>
-        <filter-name>proxyFilter</filter-name>
+        <filter-name>filterProxy</filter-name>
         <url-pattern>*.*</url-pattern>
     </filter-mapping>
+
 </web-app>

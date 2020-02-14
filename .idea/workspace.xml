@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8250e9f2-95f7-474b-9dd7-938f8d15d77c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Usecase-10/docker-compose-spring-boot/pictolearn-dispatcher/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Usecase-10/docker-compose-spring-boot/pictolearn-dispatcher/Dockerfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Usecase-10/docker-compose-spring-boot/pictolearn-dispatcher/src/main/java/org/pictolearn/docker/filter/ProxyFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/Usecase-10/docker-compose-spring-boot/pictolearn-dispatcher/src/main/java/org/pictolearn/docker/filter/ProxyFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Usecase-10/docker-compose-spring-boot/pictolearn-dispatcher/src/main/java/org/pictolearn/docker/servlet/ProxyServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/Usecase-10/docker-compose-spring-boot/pictolearn-dispatcher/src/main/java/org/pictolearn/docker/servlet/ProxyServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Usecase-10/docker-compose-spring-boot/pictolearn-dispatcher/src/main/java/org/pictolearn/docker/servlet/ProxyServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/Usecase-10/docker-compose-spring-boot/pictolearn-dispatcher/src/main/java/org/pictolearn/docker/servlet/Router.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Usecase-10/docker-compose-spring-boot/pictolearn-dispatcher/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Usecase-10/docker-compose-spring-boot/pictolearn-dispatcher/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -64,6 +65,7 @@
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mysql.8&#10;mysql" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../hephaestus/heph" />
@@ -208,6 +210,10 @@
       </list>
     </option>
   </component>
+  <component name="StructureViewFactory">
+    <option name="AUTOSCROLL_FROM_SOURCE" value="true" />
+    <option name="ACTIVE_ACTIONS" value=",SHOW_PROPERTIES" />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="8250e9f2-95f7-474b-9dd7-938f8d15d77c" name="Default Changelist" comment="" />
@@ -275,7 +281,7 @@
       <workItem from="1581698799932" duration="131000" />
       <workItem from="1581698944851" duration="7417000" />
       <workItem from="1581707781327" duration="853000" />
-      <workItem from="1581708645465" duration="291000" />
+      <workItem from="1581708645465" duration="10283000" />
     </task>
     <servers />
   </component>
@@ -316,10 +322,11 @@
     </state>
     <state x="449" y="134" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1536.864/-1600.0.1600.900@0.0.1536.864" timestamp="1578688120983" />
     <state x="449" y="134" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1536.864/-1600.166.1600.900/1920.181.900.1600@0.0.1536.864" timestamp="1579674278034" />
-    <state x="100" y="100" width="1336" height="664" key="DiffContextDialog" timestamp="1576877779808">
-      <screen x="0" y="0" width="1536" height="864" />
+    <state x="111" y="83" width="1485" height="554" key="DiffContextDialog" timestamp="1581711470161">
+      <screen x="0" y="0" width="1707" height="720" />
     </state>
     <state x="100" y="100" width="1336" height="664" key="DiffContextDialog/0.0.1536.864/-1600.0.1600.900@0.0.1536.864" timestamp="1576877779808" />
+    <state x="111" y="83" width="1485" height="554" key="DiffContextDialog/0.0.1707.720/2560.0.600.1067/-1920.0.1280.720@0.0.1707.720" timestamp="1581711470161" />
     <state x="499" y="52" key="FileChooserDialogImpl" timestamp="1581636345599">
       <screen x="0" y="0" width="1707" height="720" />
     </state>
