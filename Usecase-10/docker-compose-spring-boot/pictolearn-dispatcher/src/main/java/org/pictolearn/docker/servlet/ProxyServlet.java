@@ -43,6 +43,7 @@ public class ProxyServlet extends HttpServlet {
 
     private static final Logger logger = LoggerFactory.getLogger(ProxyServlet.class);
 
+
     /**
      * Applies only to GET REQUESTS.
      * The following method picks up a random host with name as "web" as specified
@@ -102,12 +103,17 @@ public class ProxyServlet extends HttpServlet {
         logger.debug("+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
         logger.debug("+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
         logger.debug("+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
+        logger.debug("\n");
+
+        String uri = request
+                .getRequestURI().toString();
 
         String path = request
                 .getRequestURI()
                 .substring(request.getContextPath().length());
 
-        logger.debug("1) POST Request: {}  ", path);
+        logger.debug("1.1) POST URI: {}  ", uri);
+        logger.debug("1.2) POST Request: {}  ", path);
 
         String endpoint = path.substring(path.indexOf("/proxyServlet/") +
                 "/proxyServlet/".length(), path.length());
@@ -133,7 +139,7 @@ public class ProxyServlet extends HttpServlet {
             return;
         }
 
-        response.addHeader("WEB-HOST-ADDED", ipAddress);
+        response.addHeader("WEB-HOST-SCALE", ipAddress);
         String url = "http://" + ipAddress + ":8080/" + endpoint;
 
         URL obj = new URL(url);
@@ -165,6 +171,7 @@ public class ProxyServlet extends HttpServlet {
 
         logger.debug("6) POST Body: {} ", body);
 
+        logger.debug("\n");
         logger.debug("+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
         logger.debug("+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
         logger.debug("+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++");

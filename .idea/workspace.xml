@@ -2,13 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8250e9f2-95f7-474b-9dd7-938f8d15d77c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Usecase-10/docker-compose-spring-boot/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Usecase-10/docker-compose-spring-boot/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Usecase-10/docker-compose-spring-boot/pictolearn-dispatcher/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Usecase-10/docker-compose-spring-boot/pictolearn-dispatcher/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Usecase-10/docker-compose-spring-boot/pictolearn-dispatcher/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Usecase-10/docker-compose-spring-boot/pictolearn-dispatcher/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Usecase-10/docker-compose-spring-boot/pictolearn-dispatcher/src/main/java/org/pictolearn/docker/filter/ProxyFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/Usecase-10/docker-compose-spring-boot/pictolearn-dispatcher/src/main/java/org/pictolearn/docker/filter/ProxyFilter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Usecase-10/docker-compose-spring-boot/pictolearn-dispatcher/src/main/java/org/pictolearn/docker/servlet/ProxyServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/Usecase-10/docker-compose-spring-boot/pictolearn-dispatcher/src/main/java/org/pictolearn/docker/servlet/ProxyServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Usecase-10/docker-compose-spring-boot/pictolearn-dispatcher/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Usecase-10/docker-compose-spring-boot/pictolearn-dispatcher/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,7 +27,18 @@
     <expand>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="Users@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="Users@192.168.0.49" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="Users@192.168.0.49" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="Users@192.168.0.49" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="Users: schema" type="76f4a085:MysqlImplModel$Schema" />
       </path>
     </expand>
     <select />
@@ -67,16 +76,16 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\SERVIDOR\Projects\docker-tutorial\Usecase-7\webapp" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\SERVIDOR\Projects\docker-tutorial\Usecase-7\webapps" />
       <recent name="C:\Users\SERVIDOR\Projects\docker-tutorial\Usecase-7" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\SERVIDOR\Projects\docker-tutorial\Usecase-7\webapp" />
     </key>
   </component>
   <component name="RestClientSettings">
@@ -261,7 +270,12 @@
       <workItem from="1581612252217" duration="695000" />
       <workItem from="1581635969128" duration="13000" />
       <workItem from="1581635985341" duration="3000" />
-      <workItem from="1581636004908" duration="4856000" />
+      <workItem from="1581636004908" duration="5149000" />
+      <workItem from="1581641174043" duration="223000" />
+      <workItem from="1581698799932" duration="131000" />
+      <workItem from="1581698944851" duration="7417000" />
+      <workItem from="1581707781327" duration="853000" />
+      <workItem from="1581708645465" duration="291000" />
     </task>
     <servers />
   </component>
@@ -288,10 +302,11 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="387" y="0" key="#Usecase-4/Dockerfile/0.0.1536.864/-1600.0.1600.900@0.0.1536.864" timestamp="1576872550857" />
-    <state x="33" y="26" width="1488" height="786" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1579938087187">
-      <screen x="0" y="0" width="1536" height="864" />
+    <state x="37" y="22" width="1488" height="786" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1581700485145">
+      <screen x="0" y="0" width="1707" height="720" />
     </state>
     <state x="33" y="26" width="1488" height="786" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.864/-1600.166.1600.900/1920.181.900.1600@0.0.1536.864" timestamp="1579938087187" />
+    <state x="37" y="22" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1707.720/2560.0.600.1067/-1920.0.1280.720@0.0.1707.720" timestamp="1581700485145" />
     <state x="665" y="243" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1581639577016">
       <screen x="0" y="0" width="1707" height="720" />
     </state>
@@ -328,15 +343,17 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state width="894" height="209" key="GridCell.Tab.0.right/0.0.1536.864/-1600.166.1600.900/1920.181.900.1600@0.0.1536.864" timestamp="1579858475866" />
-    <state width="338" height="730" key="HiddenNamespacesPopup" timestamp="1579858232608">
-      <screen x="0" y="0" width="1536" height="864" />
+    <state width="376" height="609" key="HiddenNamespacesPopup" timestamp="1581700383865">
+      <screen x="0" y="0" width="1707" height="720" />
     </state>
     <state width="338" height="730" key="HiddenNamespacesPopup/0.0.1536.864/-1600.166.1600.900/1920.181.900.1600@0.0.1536.864" timestamp="1579858232608" />
-    <state x="0" y="0" key="SettingsEditor" timestamp="1581009482436">
+    <state width="376" height="609" key="HiddenNamespacesPopup/0.0.1707.720/2560.0.600.1067/-1920.0.1280.720@0.0.1707.720" timestamp="1581700383865" />
+    <state x="0" y="0" key="SettingsEditor" timestamp="1581707762551">
       <screen x="0" y="0" width="1707" height="720" />
     </state>
     <state x="0" y="0" key="SettingsEditor/0.0.1536.864/-1600.0.1600.900@0.0.1536.864" timestamp="1578689102375" />
     <state x="0" y="0" key="SettingsEditor/0.0.1536.864/-1600.166.1600.900/1920.181.900.1600@0.0.1536.864" timestamp="1579932886400" />
+    <state x="0" y="0" key="SettingsEditor/0.0.1707.720/2560.0.600.1067/-1920.0.1280.720@0.0.1707.720" timestamp="1581707762551" />
     <state x="0" y="0" key="SettingsEditor/0.0.1707.720@0.0.1707.720" timestamp="1581009482436" />
     <state x="161" y="25" key="Vcs.Push.Dialog.v2" timestamp="1575733772020">
       <screen x="0" y="0" width="1536" height="864" />
@@ -379,12 +396,13 @@
     </state>
     <state x="268" y="217" width="1040" height="430" key="org.intellij.images.editor.actions.BackgroundImageDialog/0.0.1536.864/-1600.0.1600.900@0.0.1536.864" timestamp="1578605551348" />
     <state x="298" y="181" width="1156" height="366" key="org.intellij.images.editor.actions.BackgroundImageDialog/0.0.1707.720@0.0.1707.720" timestamp="1581009479077" />
-    <state x="290" y="0" width="1122" height="717" key="search.everywhere.popup" timestamp="1581639326483">
+    <state x="290" y="0" width="1122" height="717" key="search.everywhere.popup" timestamp="1581707803690">
       <screen x="0" y="0" width="1707" height="720" />
     </state>
     <state x="261" y="0" width="1009" height="860" key="search.everywhere.popup/0.0.1536.864/-1600.0.1600.900@0.0.1536.864" timestamp="1578429058054" />
     <state x="261" y="0" width="1009" height="860" key="search.everywhere.popup/0.0.1536.864/-1600.166.1600.900/1920.181.900.1600@0.0.1536.864" timestamp="1579857736259" />
     <state x="290" y="0" width="1122" height="717" key="search.everywhere.popup/0.0.1707.720/-1920.0.1280.720/2560.0.600.1067@0.0.1707.720" timestamp="1581639326483" />
+    <state x="290" y="0" width="1122" height="717" key="search.everywhere.popup/0.0.1707.720/2560.0.600.1067/-1920.0.1280.720@0.0.1707.720" timestamp="1581707803690" />
     <state x="290" y="0" width="1122" height="717" key="search.everywhere.popup/0.0.1707.720@0.0.1707.720" timestamp="1581009517956" />
   </component>
   <component name="XDebuggerManager">

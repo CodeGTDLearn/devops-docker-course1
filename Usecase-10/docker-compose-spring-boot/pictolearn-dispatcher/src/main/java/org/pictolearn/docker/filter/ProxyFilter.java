@@ -25,21 +25,16 @@ public class ProxyFilter implements Filter {
 
     private static final Logger logger = LoggerFactory.getLogger(ProxyFilter.class);
 
-    public void destroy() {
+
+    public void init(FilterConfig arg0) throws ServletException {
     }
 
+    // funciona a cada request/response
     public void doFilter(
             ServletRequest request,
             ServletResponse response,
             FilterChain chain)
             throws IOException, ServletException {
-
-
-        logger.debug("\n\n");
-        logger.debug("+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
-        logger.debug("+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
-        logger.debug("+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
-
 
         HttpServletRequest req = (HttpServletRequest) request;
 
@@ -53,12 +48,9 @@ public class ProxyFilter implements Filter {
 
         request.getRequestDispatcher("/ProxyServlet").forward(request, response);
 
-        logger.debug("+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
-        logger.debug("+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
-        logger.debug("+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
-        logger.debug("\n\n");
     }
 
-    public void init(FilterConfig arg0) throws ServletException {
+    public void destroy() {
     }
+
 }
