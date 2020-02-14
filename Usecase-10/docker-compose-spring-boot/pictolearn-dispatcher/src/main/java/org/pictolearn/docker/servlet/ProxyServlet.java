@@ -98,15 +98,25 @@ public class ProxyServlet extends HttpServlet {
             HttpServletRequest request,
             HttpServletResponse response) throws ServletException, IOException {
 
+        logger.debug("\n\n");
+        logger.debug("+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
+        logger.debug("+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
+        logger.debug("+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
+
         String path = request
                 .getRequestURI()
                 .substring(request.getContextPath().length());
 
-        path = path.substring(path.indexOf("/proxyServlet/") +
+        logger.debug("1) POST Request: {}  ", path);
+
+        String endpoint = path.substring(path.indexOf("/proxyServlet/") +
                 "/proxyServlet/".length(), path.length());
 
-        logger.debug("Path to query for POST Request: {}  ", path);
-        if (StringUtils.isEmpty(path)) {
+
+        logger.debug("2) POST endpoint: {}  ", endpoint);
+
+
+        if (StringUtils.isEmpty(endpoint)) {
             response.setContentType("text/html");
             PrintWriter out = response.getWriter();
             out.println("Invalid POST CALL empty URI");
@@ -115,19 +125,23 @@ public class ProxyServlet extends HttpServlet {
         }
         String ipAddress = getRandomIpAddress(response);
 
+        logger.debug("3) POST IpAddress: {}  ", ipAddress);
+
         if (ipAddress == null) {
             response.setStatus(HttpServletResponse.SC_INTERNAL_SERVER_ERROR);
             response.getWriter().println("No Hosts Found");
             return;
         }
 
-        response.addHeader("WEB-HOST", ipAddress);
-        String url = "http://" + ipAddress + ":8080/" + path;
+        response.addHeader("WEB-HOST-ADDED", ipAddress);
+        String url = "http://" + ipAddress + ":8080/" + endpoint;
 
         URL obj = new URL(url);
         HttpURLConnection con = (HttpURLConnection) obj.openConnection();
         con.setRequestMethod("POST");
-        logger.debug("POST url :{} ", url);
+
+        logger.debug("4) POST url :{} ", url);
+
 
         Enumeration<String> headerNames = request.getHeaderNames();
         Set<String> headers = new HashSet<>();
@@ -135,17 +149,27 @@ public class ProxyServlet extends HttpServlet {
             headers.add(headerNames.nextElement());
         }
 
+
         if (!CollectionUtils.isEmpty(headers)) {
+            int contador = 0;
             for (String header : headers) {
                 String value = request.getHeader(header);
-                logger.debug("Adding header to the request  {} with value {} ", new Object[]{header, value});
+                contador++;
+                logger.debug("5.{}) POST Add header in req: {} | value: {} ", new Object[]{contador, header, value});
                 con.setRequestProperty(header, value);
             }
         }
 
         con.setDoOutput(true);
         String body = getBody(request);
-        logger.debug("Body : {} ", body);
+
+        logger.debug("6) POST Body: {} ", body);
+
+        logger.debug("+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
+        logger.debug("+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
+        logger.debug("+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
+        logger.debug("\n\n");
+
         OutputStream wr = con.getOutputStream();
         wr.write(body.getBytes("UTF-8"));
         wr.flush();

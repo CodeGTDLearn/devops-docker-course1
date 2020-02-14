@@ -31,17 +31,32 @@ public class ProxyFilter implements Filter {
     public void doFilter(
             ServletRequest request,
             ServletResponse response,
-            FilterChain chain) throws IOException, ServletException {
+            FilterChain chain)
+            throws IOException, ServletException {
 
-        logger.debug("Proxy filter");
+
+        logger.debug("\n\n");
+        logger.debug("+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
+        logger.debug("+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
+        logger.debug("+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
+
 
         HttpServletRequest req = (HttpServletRequest) request;
+
+        String log1 = req.getRequestURI().substring(req.getContextPath().length());
+
+        logger.debug("1) ProxyFilter: {}",log1);
 
         request.setAttribute(
                 "uri",
                 req.getRequestURI().substring(req.getContextPath().length()));
 
         request.getRequestDispatcher("/ProxyServlet").forward(request, response);
+
+        logger.debug("+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
+        logger.debug("+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
+        logger.debug("+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
+        logger.debug("\n\n");
     }
 
     public void init(FilterConfig arg0) throws ServletException {

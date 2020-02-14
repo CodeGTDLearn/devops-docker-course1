@@ -17,8 +17,12 @@ WORKDIR /opt/tomcat
 #General procedures
 ADD . /usr/local/pictolearn
 RUN mkdir -p /usr/local/pictolearn/logs
+
 RUN cd /usr/local/pictolearn && mvn clean package
+#mvn clean spring-boot:run -Dspring-boot.run.jvmArguments="-Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=y,address=5005"
+
 RUN  cp /usr/local/pictolearn/target/pictolearn-dispatcher.war /opt/tomcat/webapps/pictolearn-dispatcher.war
 
 #run TOMCAT
 CMD ["/opt/tomcat/bin/catalina.sh","run"]
+#CMD ["java","-jar","-DlogPath=/usr/local/pictolearn/logs","/usr/local/pictolearn/target/pictolearn-web-1.0.0-SNAPSHOT.jar"]

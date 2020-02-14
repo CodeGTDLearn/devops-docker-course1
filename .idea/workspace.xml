@@ -2,8 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8250e9f2-95f7-474b-9dd7-938f8d15d77c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Usecase-10/docker-compose-spring-boot/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Usecase-10/docker-compose-spring-boot/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Usecase-10/docker-compose-spring-boot/pictolearn-dispatcher/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Usecase-10/docker-compose-spring-boot/pictolearn-dispatcher/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Usecase-10/docker-compose-spring-boot/pictolearn-dispatcher/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Usecase-10/docker-compose-spring-boot/pictolearn-dispatcher/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Usecase-10/docker-compose-spring-boot/pictolearn-dispatcher/src/main/java/org/pictolearn/docker/filter/ProxyFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/Usecase-10/docker-compose-spring-boot/pictolearn-dispatcher/src/main/java/org/pictolearn/docker/filter/ProxyFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Usecase-10/docker-compose-spring-boot/pictolearn-dispatcher/src/main/java/org/pictolearn/docker/servlet/ProxyServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/Usecase-10/docker-compose-spring-boot/pictolearn-dispatcher/src/main/java/org/pictolearn/docker/servlet/ProxyServlet.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +57,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Usecase-7/webapp" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../hephaestus/heph" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -66,12 +71,12 @@
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\SERVIDOR\Projects\docker-tutorial\Usecase-7\webapp" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\SERVIDOR\Projects\docker-tutorial\Usecase-7\webapps" />
       <recent name="C:\Users\SERVIDOR\Projects\docker-tutorial\Usecase-7" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\SERVIDOR\Projects\docker-tutorial\Usecase-7\webapp" />
     </key>
   </component>
   <component name="RestClientSettings">
@@ -254,6 +259,9 @@
       <workItem from="1581009619032" duration="56000" />
       <workItem from="1581010199522" duration="9000" />
       <workItem from="1581612252217" duration="695000" />
+      <workItem from="1581635969128" duration="13000" />
+      <workItem from="1581635985341" duration="3000" />
+      <workItem from="1581636004908" duration="4856000" />
     </task>
     <servers />
   </component>
@@ -284,6 +292,10 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="33" y="26" width="1488" height="786" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.864/-1600.166.1600.900/1920.181.900.1600@0.0.1536.864" timestamp="1579938087187" />
+    <state x="665" y="243" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1581639577016">
+      <screen x="0" y="0" width="1707" height="720" />
+    </state>
+    <state x="665" y="243" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1707.720/-1920.0.1280.720/2560.0.600.1067@0.0.1707.720" timestamp="1581639577016" />
     <state x="449" y="134" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1579674278034">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
@@ -293,11 +305,12 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="100" y="100" width="1336" height="664" key="DiffContextDialog/0.0.1536.864/-1600.0.1600.900@0.0.1536.864" timestamp="1576877779808" />
-    <state x="499" y="52" key="FileChooserDialogImpl" timestamp="1581009474382">
+    <state x="499" y="52" key="FileChooserDialogImpl" timestamp="1581636345599">
       <screen x="0" y="0" width="1707" height="720" />
     </state>
     <state x="449" y="62" key="FileChooserDialogImpl/0.0.1536.864/-1600.0.1600.900@0.0.1536.864" timestamp="1578605549831" />
     <state x="449" y="62" key="FileChooserDialogImpl/0.0.1536.864/-1600.166.1600.900/1920.181.900.1600@0.0.1536.864" timestamp="1579769225004" />
+    <state x="499" y="52" key="FileChooserDialogImpl/0.0.1707.720/-1920.0.1280.720/2560.0.600.1067@0.0.1707.720" timestamp="1581636345599" />
     <state x="499" y="52" key="FileChooserDialogImpl/0.0.1707.720@0.0.1707.720" timestamp="1581009474382" />
     <state width="894" height="209" key="GridCell.Tab.0.bottom" timestamp="1579858475866">
       <screen x="0" y="0" width="1536" height="864" />
@@ -366,11 +379,23 @@
     </state>
     <state x="268" y="217" width="1040" height="430" key="org.intellij.images.editor.actions.BackgroundImageDialog/0.0.1536.864/-1600.0.1600.900@0.0.1536.864" timestamp="1578605551348" />
     <state x="298" y="181" width="1156" height="366" key="org.intellij.images.editor.actions.BackgroundImageDialog/0.0.1707.720@0.0.1707.720" timestamp="1581009479077" />
-    <state x="290" y="0" width="1122" height="717" key="search.everywhere.popup" timestamp="1581009517956">
+    <state x="290" y="0" width="1122" height="717" key="search.everywhere.popup" timestamp="1581639326483">
       <screen x="0" y="0" width="1707" height="720" />
     </state>
     <state x="261" y="0" width="1009" height="860" key="search.everywhere.popup/0.0.1536.864/-1600.0.1600.900@0.0.1536.864" timestamp="1578429058054" />
     <state x="261" y="0" width="1009" height="860" key="search.everywhere.popup/0.0.1536.864/-1600.166.1600.900/1920.181.900.1600@0.0.1536.864" timestamp="1579857736259" />
+    <state x="290" y="0" width="1122" height="717" key="search.everywhere.popup/0.0.1707.720/-1920.0.1280.720/2560.0.600.1067@0.0.1707.720" timestamp="1581639326483" />
     <state x="290" y="0" width="1122" height="717" key="search.everywhere.popup/0.0.1707.720@0.0.1707.720" timestamp="1581009517956" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Usecase-10/docker-compose-spring-boot/pictolearn-dispatcher/src/main/java/org/pictolearn/docker/filter/ProxyFilter.java</url>
+          <line>31</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

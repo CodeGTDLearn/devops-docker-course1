@@ -28,6 +28,7 @@ services:
     image: disp-img
     ports:
       - "1111:8080"
+      - "5005:5005"
     hostname: router
     tty: true
     environment:
