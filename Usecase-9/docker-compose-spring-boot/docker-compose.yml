@@ -4,6 +4,7 @@ networks:
   rede:
   
 services: #specifies 2 microservices "web" and "mysql"
+
   bancodb:
     image: mysql:5.7.22 # Expose a mysql image
     restart: always
@@ -18,7 +19,7 @@ services: #specifies 2 microservices "web" and "mysql"
       - rede
     
   web: # Web microservice
-    build: pictolearn-docker
+    build: pictolearn-docker  # Dockerfile folder
     image: pictolearn-docker
     ports:
       - "5555:8080" # expose port 5555 for the rest client to connect to
