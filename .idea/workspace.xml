@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8250e9f2-95f7-474b-9dd7-938f8d15d77c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Usecase-10/docker-compose-spring-boot/pictolearn-dispatcher/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Usecase-10/docker-compose-spring-boot/pictolearn-dispatcher/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Usecase-10/docker-compose-spring-boot/pictolearn-dispatcher/src/main/java/org/pictolearn/docker/filter/ProxyFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/Usecase-10/docker-compose-spring-boot/pictolearn-dispatcher/src/main/java/org/pictolearn/docker/filter/ProxyFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Usecase-10/docker-compose-spring-boot/pictolearn-dispatcher/src/main/java/org/pictolearn/docker/servlet/ProxyServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/Usecase-10/docker-compose-spring-boot/pictolearn-dispatcher/src/main/java/org/pictolearn/docker/servlet/Router.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Usecase-10/docker-compose-spring-boot/pictolearn-dispatcher/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Usecase-10/docker-compose-spring-boot/pictolearn-dispatcher/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-    </list>
+    <list default="true" id="8250e9f2-95f7-474b-9dd7-938f8d15d77c" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -58,17 +51,18 @@
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
     <option name="showVisibilityIcons" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mysql.8&#10;mysql" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../hephaestus/heph" />
+    <property name="dart.analysis.tool.window.visible" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -82,12 +76,12 @@
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\SERVIDOR\Projects\docker-tutorial\Usecase-7\webapp" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\SERVIDOR\Projects\docker-tutorial\Usecase-7\webapps" />
       <recent name="C:\Users\SERVIDOR\Projects\docker-tutorial\Usecase-7" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\SERVIDOR\Projects\docker-tutorial\Usecase-7\webapp" />
     </key>
   </component>
   <component name="RestClientSettings">
@@ -192,27 +186,12 @@
       </list>
     </recent_temporary>
   </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
-      <list>
-        <serviceView>
-          <option name="contentProportion" value="0.37412587" />
-          <treeState>
-            <expand>
-              <path>
-                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="root:Users@localhost" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              </path>
-            </expand>
-            <select />
-          </treeState>
-        </serviceView>
-      </list>
-    </option>
-  </component>
   <component name="StructureViewFactory">
     <option name="AUTOSCROLL_FROM_SOURCE" value="true" />
     <option name="ACTIVE_ACTIONS" value=",SHOW_PROPERTIES" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -282,135 +261,28 @@
       <workItem from="1581698944851" duration="7417000" />
       <workItem from="1581707781327" duration="853000" />
       <workItem from="1581708645465" duration="10283000" />
+      <workItem from="1585259746259" duration="800000" />
+      <workItem from="1585261316594" duration="699000" />
+      <workItem from="1585414811572" duration="10000" />
+      <workItem from="1586457501095" duration="1245000" />
+      <workItem from="1586464715777" duration="1278000" />
+      <workItem from="1592757835836" duration="14000" />
+      <workItem from="1592758049968" duration="472000" />
+      <workItem from="1594936472557" duration="74000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
   </component>
   <component name="UnknownFeatures">
     <option featureType="com.intellij.fileTypeFactory" implementationName="readme" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="161" y="0" key="#Docker" timestamp="1576872403549">
-      <screen x="0" y="0" width="1536" height="864" />
+    <state x="699" y="68" key="FileChooserDialogImpl" timestamp="1592758060473">
+      <screen x="0" y="0" width="2048" height="864" />
     </state>
-    <state x="161" y="0" key="#Docker/0.0.1536.864/-1600.0.1600.900@0.0.1536.864" timestamp="1576872403549" />
-    <state x="161" y="0" key="#Scopes" timestamp="1575755528394">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state x="161" y="0" key="#Scopes/0.0.1536.864/-1600.0.1600.900@0.0.1536.864" timestamp="1575755528394" />
-    <state x="387" y="0" key="#Usecase-1/Dockerfile" timestamp="1575661559019">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state x="387" y="0" key="#Usecase-1/Dockerfile/0.0.1536.864/-1600.0.1600.900@0.0.1536.864" timestamp="1575661559019" />
-    <state x="387" y="0" key="#Usecase-4/Dockerfile" timestamp="1576872550857">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state x="387" y="0" key="#Usecase-4/Dockerfile/0.0.1536.864/-1600.0.1600.900@0.0.1536.864" timestamp="1576872550857" />
-    <state x="37" y="22" width="1488" height="786" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1581700485145">
-      <screen x="0" y="0" width="1707" height="720" />
-    </state>
-    <state x="33" y="26" width="1488" height="786" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.864/-1600.166.1600.900/1920.181.900.1600@0.0.1536.864" timestamp="1579938087187" />
-    <state x="37" y="22" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1707.720/2560.0.600.1067/-1920.0.1280.720@0.0.1707.720" timestamp="1581700485145" />
-    <state x="665" y="243" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1581639577016">
-      <screen x="0" y="0" width="1707" height="720" />
-    </state>
-    <state x="665" y="243" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1707.720/-1920.0.1280.720/2560.0.600.1067@0.0.1707.720" timestamp="1581639577016" />
-    <state x="449" y="134" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1579674278034">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state x="449" y="134" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1536.864/-1600.0.1600.900@0.0.1536.864" timestamp="1578688120983" />
-    <state x="449" y="134" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1536.864/-1600.166.1600.900/1920.181.900.1600@0.0.1536.864" timestamp="1579674278034" />
-    <state x="111" y="83" width="1485" height="554" key="DiffContextDialog" timestamp="1581711470161">
-      <screen x="0" y="0" width="1707" height="720" />
-    </state>
-    <state x="100" y="100" width="1336" height="664" key="DiffContextDialog/0.0.1536.864/-1600.0.1600.900@0.0.1536.864" timestamp="1576877779808" />
-    <state x="111" y="83" width="1485" height="554" key="DiffContextDialog/0.0.1707.720/2560.0.600.1067/-1920.0.1280.720@0.0.1707.720" timestamp="1581711470161" />
-    <state x="499" y="52" key="FileChooserDialogImpl" timestamp="1581636345599">
-      <screen x="0" y="0" width="1707" height="720" />
-    </state>
-    <state x="449" y="62" key="FileChooserDialogImpl/0.0.1536.864/-1600.0.1600.900@0.0.1536.864" timestamp="1578605549831" />
-    <state x="449" y="62" key="FileChooserDialogImpl/0.0.1536.864/-1600.166.1600.900/1920.181.900.1600@0.0.1536.864" timestamp="1579769225004" />
-    <state x="499" y="52" key="FileChooserDialogImpl/0.0.1707.720/-1920.0.1280.720/2560.0.600.1067@0.0.1707.720" timestamp="1581636345599" />
-    <state x="499" y="52" key="FileChooserDialogImpl/0.0.1707.720@0.0.1707.720" timestamp="1581009474382" />
-    <state width="894" height="209" key="GridCell.Tab.0.bottom" timestamp="1579858475866">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state width="894" height="209" key="GridCell.Tab.0.bottom/0.0.1536.864/-1600.166.1600.900/1920.181.900.1600@0.0.1536.864" timestamp="1579858475866" />
-    <state width="894" height="209" key="GridCell.Tab.0.center" timestamp="1579858475866">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state width="894" height="209" key="GridCell.Tab.0.center/0.0.1536.864/-1600.166.1600.900/1920.181.900.1600@0.0.1536.864" timestamp="1579858475866" />
-    <state width="894" height="209" key="GridCell.Tab.0.left" timestamp="1579858475866">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state width="894" height="209" key="GridCell.Tab.0.left/0.0.1536.864/-1600.166.1600.900/1920.181.900.1600@0.0.1536.864" timestamp="1579858475866" />
-    <state width="894" height="209" key="GridCell.Tab.0.right" timestamp="1579858475866">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state width="894" height="209" key="GridCell.Tab.0.right/0.0.1536.864/-1600.166.1600.900/1920.181.900.1600@0.0.1536.864" timestamp="1579858475866" />
-    <state width="376" height="609" key="HiddenNamespacesPopup" timestamp="1581700383865">
-      <screen x="0" y="0" width="1707" height="720" />
-    </state>
-    <state width="338" height="730" key="HiddenNamespacesPopup/0.0.1536.864/-1600.166.1600.900/1920.181.900.1600@0.0.1536.864" timestamp="1579858232608" />
-    <state width="376" height="609" key="HiddenNamespacesPopup/0.0.1707.720/2560.0.600.1067/-1920.0.1280.720@0.0.1707.720" timestamp="1581700383865" />
-    <state x="0" y="0" key="SettingsEditor" timestamp="1581707762551">
-      <screen x="0" y="0" width="1707" height="720" />
-    </state>
-    <state x="0" y="0" key="SettingsEditor/0.0.1536.864/-1600.0.1600.900@0.0.1536.864" timestamp="1578689102375" />
-    <state x="0" y="0" key="SettingsEditor/0.0.1536.864/-1600.166.1600.900/1920.181.900.1600@0.0.1536.864" timestamp="1579932886400" />
-    <state x="0" y="0" key="SettingsEditor/0.0.1707.720/2560.0.600.1067/-1920.0.1280.720@0.0.1707.720" timestamp="1581707762551" />
-    <state x="0" y="0" key="SettingsEditor/0.0.1707.720@0.0.1707.720" timestamp="1581009482436" />
-    <state x="161" y="25" key="Vcs.Push.Dialog.v2" timestamp="1575733772020">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state x="161" y="25" key="Vcs.Push.Dialog.v2/0.0.1536.864/-1600.0.1600.900@0.0.1536.864" timestamp="1575733772020" />
-    <state x="541" y="59" key="com.intellij.database.view.ui.DbObjectDialog" timestamp="1579858242165">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state x="541" y="59" key="com.intellij.database.view.ui.DbObjectDialog/0.0.1536.864/-1600.166.1600.900/1920.181.900.1600@0.0.1536.864" timestamp="1579858242165" />
-    <state x="100" y="100" width="1336" height="664" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1576877779808">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state x="100" y="100" width="1336" height="664" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.0.1536.864/-1600.0.1600.900@0.0.1536.864" timestamp="1576877779808" />
-    <state x="554" y="186" key="com.intellij.ide.util.TipDialog" timestamp="1581008255095">
-      <screen x="0" y="0" width="1707" height="720" />
-    </state>
-    <state x="554" y="186" key="com.intellij.ide.util.TipDialog/0.0.1707.720@0.0.1707.720" timestamp="1581008255095" />
-    <state x="476" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1579764503537">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state x="476" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1536.864/-1600.166.1600.900/1920.181.900.1600@0.0.1536.864" timestamp="1579764503537" />
-    <state x="0" y="0" width="960" height="864" key="find.popup" timestamp="1579771547386">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state x="0" y="0" width="960" height="864" key="find.popup/0.0.1536.864/-1600.166.1600.900/1920.181.900.1600@0.0.1536.864" timestamp="1579771547386" />
-    <state x="452" y="123" key="git4idea.merge.GitMergeDialog" timestamp="1575733662806">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state x="452" y="123" key="git4idea.merge.GitMergeDialog/0.0.1536.864/-1600.0.1600.900@0.0.1536.864" timestamp="1575733662806" />
-    <state x="572" y="235" width="375" height="417" key="jetbrains.javascript.buildTools.run-task-popup" timestamp="1575732361623">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state x="572" y="235" width="375" height="417" key="jetbrains.javascript.buildTools.run-task-popup/0.0.1536.864/-1600.0.1600.900@0.0.1536.864" timestamp="1575732361623" />
-    <state x="0" y="0" key="new project wizard" timestamp="1576004465443">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state x="0" y="0" key="new project wizard/0.0.1536.864/-1600.0.1600.900@0.0.1536.864" timestamp="1576004465443" />
-    <state x="298" y="181" width="1156" height="366" key="org.intellij.images.editor.actions.BackgroundImageDialog" timestamp="1581009479077">
-      <screen x="0" y="0" width="1707" height="720" />
-    </state>
-    <state x="268" y="217" width="1040" height="430" key="org.intellij.images.editor.actions.BackgroundImageDialog/0.0.1536.864/-1600.0.1600.900@0.0.1536.864" timestamp="1578605551348" />
-    <state x="298" y="181" width="1156" height="366" key="org.intellij.images.editor.actions.BackgroundImageDialog/0.0.1707.720@0.0.1707.720" timestamp="1581009479077" />
-    <state x="290" y="0" width="1122" height="717" key="search.everywhere.popup" timestamp="1581707803690">
-      <screen x="0" y="0" width="1707" height="720" />
-    </state>
-    <state x="261" y="0" width="1009" height="860" key="search.everywhere.popup/0.0.1536.864/-1600.0.1600.900@0.0.1536.864" timestamp="1578429058054" />
-    <state x="261" y="0" width="1009" height="860" key="search.everywhere.popup/0.0.1536.864/-1600.166.1600.900/1920.181.900.1600@0.0.1536.864" timestamp="1579857736259" />
-    <state x="290" y="0" width="1122" height="717" key="search.everywhere.popup/0.0.1707.720/-1920.0.1280.720/2560.0.600.1067@0.0.1707.720" timestamp="1581639326483" />
-    <state x="290" y="0" width="1122" height="717" key="search.everywhere.popup/0.0.1707.720/2560.0.600.1067/-1920.0.1280.720@0.0.1707.720" timestamp="1581707803690" />
-    <state x="290" y="0" width="1122" height="717" key="search.everywhere.popup/0.0.1707.720@0.0.1707.720" timestamp="1581009517956" />
+    <state x="699" y="68" key="FileChooserDialogImpl/0.0.2048.864/2560.0.1536.864/-900.0.720.1280@0.0.2048.864" timestamp="1592758060473" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
